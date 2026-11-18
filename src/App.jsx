@@ -19,6 +19,7 @@ import {
 import { useState } from "react";
 import sewaDashboard from "./assets/sewa-dashboard.png";
 import profilePhoto from "./assets/passport.jpeg";
+import guessingApp from "./assets/Word_guessing_app.png";
 
 
 function App() {
@@ -236,68 +237,138 @@ function App() {
         </section>
 
         {/* PROJECTS SECTION */}
-        <section id="projects" className="px-6 py-24 lg:px-10">
-          <div className="mx-auto max-w-7xl">
-            <p className="text-sm font-semibold tracking-widest text-[#8295FF]">
-              02 / SELECTED WORK
-            </p>
+       
+{/* PROJECTS SECTION */}
+<section id="projects" className="px-6 py-24 lg:px-10">
+  <div className="mx-auto max-w-7xl">
+    <p className="text-sm font-semibold tracking-widest text-[#8295FF]">
+      02 / SELECTED WORK
+    </p>
 
-            <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
-              Projects I've worked on.
-            </h2>
+    <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
+      Projects I've worked on.
+    </h2>
 
-            <div className="mt-12 max-w-2xl rounded-2xl border border-white/10 bg-[#111827] p-6 transition hover:border-[#8295FF]/50">
-            <a href="https://sewa-peak-load-forecastinggit-4p4gsdmnmlvdjwuikabkgl.streamlit.app/" target="blank"><div className="mb-6 overflow-hidden rounded-xl">
-                <img
-                  src={sewaDashboard}
-                  alt="SEWA Electricity Peak Load Forecasting Dashboard"
-                  className="w-full aspect-video object-cover"
-                />
-              </div></a>
-              
+    {/* PROJECT GRID */}
+    <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
 
-              <span className="rounded-full bg-green-400/10 px-3 py-1 text-xs font-medium text-green-400">
-                Completed · Deployed
-              </span>
-
-              <h3 className="mt-5 text-xl font-bold">
-                SEWA Daily Peak Electricity Demand Forecasting
-              </h3>
-
-              <p className="mt-3 leading-7 text-gray-400">
-                I Developed a machine learning application to estimate daily electricity peak demand using historical electricity and weather data from the Sharjah Electricity, Water and Gas Authority (SEWA).
-
-                The project involved data preparation, exploratory analysis, feature engineering and model evaluation. Linear Regression achieved the best performance among the evaluated models, with an MAE of 42.53 MW and an R² score of 0.9872.
-
-                **Technologies:** Python, Pandas, NumPy, Scikit-learn, Matplotlib and Streamlit.
-              </p>
-
-              <p className="mt-5 text-sm text-[#8295FF]">
-                Python · Pandas · Scikit-learn · Streamlit
-              </p>
-
-              <div className="mt-7 flex flex-wrap gap-5">
-                <a
-                  href="https://github.com/NSJeremiah01/sewa-peak-load-forecasting"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 text-sm font-medium hover:text-[#8295FF]"
-                >
-                  <FaGithub size={17} /> GitHub Repository <ArrowUpRight size={15} />
-                </a>
-
-                <a
-                  href="https://sewa-peak-load-forecastinggit-4p4gsdmnmlvdjwuikabkgl.streamlit.app"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 text-sm font-medium hover:text-[#8295FF]"
-                >
-                  Live Application <ArrowUpRight size={15} />
-                </a>
-              </div>
-            </div>
+      {/* PROJECT 1 */}
+      <div className="rounded-xl border border-white/10 bg-[#111827] p-4 transition hover:-translate-y-1 hover:border-[#8295FF]/50">
+        <a
+          href="https://sewa-peak-load-forecastinggit-4p4gsdmnmlvdjwuikabkgl.streamlit.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="mb-5 overflow-hidden rounded-lg">
+            <img
+              src={sewaDashboard}
+              alt="SEWA Electricity Peak Load Forecasting Dashboard"
+              className="h-40 w-full object-cover"
+            />
           </div>
-        </section>
+        </a>
+
+        <span className="rounded-full bg-green-400/10 px-2 py-1 text-xs font-medium text-green-400">
+          Completed · Deployed
+        </span>
+
+        <h3 className="mt-4 text-lg font-bold">
+          SEWA Daily Peak Electricity Demand Forecasting
+        </h3>
+
+        <p className="mt-3 text-sm leading-6 text-gray-400">
+          Developed a machine learning application to estimate daily peak
+          electricity demand using historical electricity and weather data
+          from the Sharjah Electricity, Water and Gas Authority (SEWA).
+          Linear Regression achieved an MAE of 42.53 MW and an R² score of
+          0.9872.
+        </p>
+
+        <p className="mt-4 text-xs leading-6 text-[#8295FF]">
+          Python · Pandas · NumPy · Scikit-learn · Streamlit
+        </p>
+
+        <div className="mt-5 flex flex-wrap gap-4">
+          <a
+            href="https://github.com/NSJeremiah01/sewa-peak-load-forecasting"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-1 text-xs font-medium hover:text-[#8295FF]"
+          >
+            <FaGithub size={15} /> GitHub <ArrowUpRight size={13} />
+          </a>
+
+          <a
+            href="https://sewa-peak-load-forecastinggit-4p4gsdmnmlvdjwuikabkgl.streamlit.app/"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-1 text-xs font-medium hover:text-[#8295FF]"
+          >
+            Live Demo <ArrowUpRight size={13} />
+          </a>
+        </div>
+      </div>
+
+      {/* PROJECT 2 */}
+      <div className="rounded-xl border border-white/10 bg-[#111827] p-4 transition hover:-translate-y-1 hover:border-[#8295FF]/50">
+        <a
+          href="https://sentiment-and-word-guessing-app-fxuerqhzgsyahtzrcawub5.streamlit.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="mb-5 overflow-hidden rounded-lg">
+            <img
+              src={guessingApp}
+              alt="Sentiment and Word Guessing Application"
+              className="h-40 w-full object-cover"
+            />
+          </div>
+        </a>
+
+        <span className="rounded-full bg-green-400/10 px-2 py-1 text-xs font-medium text-green-400">
+          Completed · Deployed
+        </span>
+
+        <h3 className="mt-4 text-lg font-bold">
+          Sentiment and Word Guessing App
+        </h3>
+
+        <p className="mt-3 text-sm leading-6 text-gray-400">
+          Built a Streamlit application using pre-trained NLP models.
+          It performs sentiment analysis by classifying text as positive
+          or negative and predicts possible missing words in sentences
+          containing a [MASK] token.
+        </p>
+
+        <p className="mt-4 text-xs leading-6 text-[#8295FF]">
+          Python · Streamlit · Hugging Face Transformers · PyTorch
+        </p>
+
+        <div className="mt-5 flex flex-wrap gap-4">
+          <a
+            href="https://github.com/NSJeremiah01/SENTIMENT-AND-WORD-GUESSING-APP"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-1 text-xs font-medium hover:text-[#8295FF]"
+          >
+            <FaGithub size={15} /> GitHub <ArrowUpRight size={13} />
+          </a>
+
+          <a
+            href="https://sentiment-and-word-guessing-app-fxuerqhzgsyahtzrcawub5.streamlit.app/"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-1 text-xs font-medium hover:text-[#8295FF]"
+          >
+            Live Demo <ArrowUpRight size={13} />
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
         {/* SKILLS SECTION */}
         <section id="skills" className="border-y border-white/10 bg-[#111827] px-6 py-24 lg:px-10">
